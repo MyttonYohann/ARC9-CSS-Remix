@@ -3,23 +3,23 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - Smorgasbord"
-SWEP.SubCategory = "Auxiliaries"
+SWEP.Category = ARC9:GetPhrase("smorg_category") or "ARC9 - Smorgasbord"
+SWEP.SubCategory = ARC9:GetPhrase("smorg_category_slot_aux") or "Auxiliaries"
 
-SWEP.PrintName = "Shield and Tonfa"
+SWEP.PrintName = ARC9:GetPhrase("smorg_gekolt_remix_shieldtonfa") or "Shield and Tonfa"
 
-SWEP.Class = "Riot Control Gear"
+SWEP.Class = ARC9:GetPhrase("smorg_class_weapon_riot") or "Riot Control Gear"
 SWEP.Trivia = {
-    ["Country of Origin"] = "Insert Generic Here",
-    ["Caliber"] = "Polymer and Steel",
+    [ ARC9:GetPhrase("smorg_trivia_country") or "Country of Origin1" ] = ARC9:GetPhrase("smorg_trivia_country_generic") or "\"Insert Generic Union/Commune Here\"",
+    [ ARC9:GetPhrase("smorg_trivia_caliber") or "Calibre2" ] = ARC9:GetPhrase("smorg_trivia_caliber_polymer") or "Polymer & Steel",
 }
 
 SWEP.Credits = {
-    ["Assets2"] = [[Left 4 Dead 2]],
-    ["Contact3"] = [[SlogoKolt#6648 or Mytton#5132]],
+    [ ARC9:GetPhrase("smorg_trivia_assets") or  ARC9:GetPhrase("smorg_trivia_assets") or "Assets3" ] = [[Left 4 Dead 2]],
+    [ ARC9:GetPhrase("smorg_trivia_contact") or  ARC9:GetPhrase("smorg_trivia_contact") or "Contact4"  ] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
-SWEP.Description = [[Set of anti riot unit, quick guard with a shield and blow them with the tonfa.]]
+SWEP.Description = ARC9:GetPhrase("smorg_gekolt_remix_shieldtonfa_desc") or [[Set of anti riot unit, quick guard with a shield and blow them with the tonfa.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/remix/c_shield_tonfa.mdl"
 SWEP.WorldModel = "models/weapons/geckololt_css/remix/w_shield_tonfa.mdl"

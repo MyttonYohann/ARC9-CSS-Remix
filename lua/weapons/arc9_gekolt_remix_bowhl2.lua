@@ -3,23 +3,23 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - Smorgasbord"
-SWEP.SubCategory = "Auxiliaries"
+SWEP.Category = ARC9:GetPhrase("smorg_category") or "ARC9 - Smorgasbord"
+SWEP.SubCategory = ARC9:GetPhrase("smorg_category_slot_aux") or "Auxiliaries"
 
-SWEP.PrintName = "Bow"
+SWEP.PrintName = ARC9:GetPhrase("smorg_gekolt_remix_bowhl2") or "Bow"
 
-SWEP.Class = "Explosive"
+SWEP.Class = ARC9:GetPhrase("smorg_class_weapon_exp") or "Explosive"
 SWEP.Trivia = {
-    ["Country of Origin"] = "Where the fuck half life 2 takes place in",
-    ["Caliber"] = [[[Hot]Rebar]],
+    [ ARC9:GetPhrase("smorg_trivia_country") or "Country of Origin1" ] = "Where the fuck half life 2 takes place in",
+    [ ARC9:GetPhrase("smorg_trivia_caliber") or "Calibre2" ] = ARC9:GetPhrase("smorg_trivia_caliber_rebar") or "Hot Rebar",
 }
 
 SWEP.Credits = {
-    ["Assets2"] = [[Half Life 2]],
-    ["Contact3"] = [[SlogoKolt#6648 or Mytton#5132]],
+    [ ARC9:GetPhrase("smorg_trivia_assets") or  ARC9:GetPhrase("smorg_trivia_assets") or "Assets3" ] = [[Half Life 2]],
+    [ ARC9:GetPhrase("smorg_trivia_contact") or  ARC9:GetPhrase("smorg_trivia_contact") or "Contact4"  ] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
-SWEP.Description = [[Crossbow are too expensive to make.
+SWEP.Description = ARC9:GetPhrase("smorg_gekolt_remix_bowhl2_desc") or [[Crossbow are too expensive to make.
 Significantly higher RoF while in sight.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/remix/c_bowhl2.mdl"
@@ -259,7 +259,8 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = [[Optic | Tactical]],
+        -- PrintName = [[Optic | Tactical]],
+        PrintName = (ARC9:GetPhrase("smorg_category_optic") or "Optic") .. " / " (ARC9:GetPhrase("smorg_category_tactical") or "Tactical")
         DefaultName = "None",
         InstalledElements = {"rail_tac"},
 
@@ -271,7 +272,7 @@ SWEP.Attachments = {
     },
 	
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("smorg_category_optic") or "Optic",
         DefaultName = "None",
         InstalledElements = {"rail_optic"},
         Hidden = true,

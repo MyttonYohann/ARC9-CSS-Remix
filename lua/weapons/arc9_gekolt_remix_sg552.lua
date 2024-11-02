@@ -3,24 +3,24 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - Smorgasbord"
-SWEP.SubCategory = "Primaries"
+SWEP.Category = ARC9:GetPhrase("smorg_category") or "ARC9 - Smorgasbord"
+SWEP.SubCategory = ARC9:GetPhrase("smorg_category_slot_prim") or "Primaries"
 
-SWEP.PrintName = "Orkaneer-52"
-SWEP.TrueName = "SG552"
+SWEP.PrintName = ARC9:GetPhrase("smorg_gekolt_remix_sg552") or "Orkaneer-52"
+SWEP.TrueName = ARC9:GetPhrase("smorg_gekolt_remix_sg552_real") or "SG552"
 
-SWEP.Class = "Assault Rifle"
+SWEP.Class = ARC9:GetPhrase("smorg_class_weapon_ar") or "Assault Rifle"
 SWEP.Trivia = {
-    ["Country of Origin"] = [[Switzerland]],
-    ["Caliber"] = "5.56x45mm",
+    [ ARC9:GetPhrase("smorg_trivia_country") or "Country of Origin1" ] = ARC9:GetPhrase("smorg_trivia_country_switzerland") or "Switzerland",
+    [ ARC9:GetPhrase("smorg_trivia_caliber") or "Calibre2" ] = ARC9:GetPhrase("smorg_trivia_caliber_556x45") or "5.56x45mm NATO",
 }
 
 SWEP.Credits = {
-    ["Assets3"] = [[Counter-Strike Source]],
-    ["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
+    [ ARC9:GetPhrase("smorg_trivia_assets") or  ARC9:GetPhrase("smorg_trivia_assets") or "Assets3" ] = [[Counter-Strike Source]],
+    [ ARC9:GetPhrase("smorg_trivia_contact") or  ARC9:GetPhrase("smorg_trivia_contact") or "Contact4"  ] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
-SWEP.Description = [[Barely customisable modular weapon.]]
+SWEP.Description = ARC9:GetPhrase("smorg_gekolt_remix_sg552_desc") or [[Barely customisable modular weapon.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/remix/c_sg552.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
@@ -311,7 +311,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Foregrip",
+        PrintName = ARC9:GetPhrase("smorg_category_foregrip") or "Foregrip",
         DefaultName = "None",
         InstalledElements = {"fg_def"},
 
@@ -325,7 +325,7 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("smorg_category_optic") or "Optic",
         DefaultName = "None",
         InstalledElements = {"rail_def"},
 
@@ -337,7 +337,7 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("smorg_category_muzzle") or "Muzzle",
         DefaultName = "None",
         InstalledElements = {"muz_def"},
 		

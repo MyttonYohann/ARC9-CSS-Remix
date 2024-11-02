@@ -3,24 +3,24 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - Smorgasbord"
-SWEP.SubCategory = "Primaries"
+SWEP.Category = ARC9:GetPhrase("smorg_category") or "ARC9 - Smorgasbord"
+SWEP.SubCategory = ARC9:GetPhrase("smorg_category_slot_prim") or "Primaries"
 
-SWEP.PrintName = [[Emisavoie]] --/em-mii-xa-vwoa/
-SWEP.TrueName = "Coach Gun"
+SWEP.PrintName = ARC9:GetPhrase("smorg_gekolt_remix_deuxb") or [[Emisavoie]] --/em-mii-xa-vwoa/
+SWEP.TrueName = ARC9:GetPhrase("smorg_gekolt_remix_deuxb_real") or "Coach Gun"
 
-SWEP.Class = "Shotgun"
+SWEP.Class = ARC9:GetPhrase("smorg_class_weapon_sho") or "Shotgun"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "12 Gauge",
+    [ ARC9:GetPhrase("smorg_trivia_country") or "Country of Origin1" ] = ARC9:GetPhrase("smorg_trivia_country_usa") or "United States",
+    [ ARC9:GetPhrase("smorg_trivia_caliber") or "Calibre2" ] = ARC9:GetPhrase("smorg_trivia_caliber_12g") or "12 Gauge",
 }
 
 SWEP.Credits = {
-    ["Assets2"] = [[Counter-Strike Source]],
-    ["Contact3"] = [[SlogoKolt#6648 or Mytton#5132]],
+    [ ARC9:GetPhrase("smorg_trivia_assets") or  ARC9:GetPhrase("smorg_trivia_assets") or "Assets3" ] = [[Counter-Strike Source]],
+    [ ARC9:GetPhrase("smorg_trivia_contact") or  ARC9:GetPhrase("smorg_trivia_contact") or "Contact4"  ] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
-SWEP.Description = [[Old, reliable, nothing could go wrong with a classic.]]
+SWEP.Description = ARC9:GetPhrase("smorg_gekolt_remix_deuxb_desc") or [[Old, reliable, nothing could go wrong with a classic.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/remix/c_db.mdl"
 SWEP.WorldModel = "models/weapons/geckololt_css/remix/c_db.mdl"
@@ -262,7 +262,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Barrel",
+        PrintName = ARC9:GetPhrase("smorg_category_barrel") or "Barrel",
         DefaultName = "Standard Barrel",
 
         Category = "smorg_fof_db",
@@ -271,7 +271,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("smorg_category_optic") or "Optic",
         DefaultName = "None",
         InstalledElements = {"rail_top"},
 
@@ -281,7 +281,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Foregrip",
+        PrintName = ARC9:GetPhrase("smorg_category_foregrip") or "Foregrip",
         DefaultName = "None",
         InstalledElements = {"rail_bot"},
 
@@ -292,7 +292,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Ammo Type",
+        PrintName = ARC9:GetPhrase("smorg_category_ammo") or "Ammo",
         DefaultName = "Default Type",
 		
         ExcludeElements = {"noammo"},		

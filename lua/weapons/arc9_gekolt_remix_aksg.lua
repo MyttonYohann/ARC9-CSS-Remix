@@ -3,24 +3,24 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - Smorgasbord"
-SWEP.SubCategory = "Primaries"
+SWEP.Category = ARC9:GetPhrase("smorg_category") or "ARC9 - Smorgasbord"
+SWEP.SubCategory = ARC9:GetPhrase("smorg_category_slot_prim") or "Primaries"
 
-SWEP.PrintName = "Nidrovich-12"
-SWEP.TrueName = "AKSG-12"
+SWEP.PrintName = ARC9:GetPhrase("smorg_gekolt_remix_aksg") or "Nidrovich-12"
+SWEP.TrueName = ARC9:GetPhrase("smorg_gekolt_remix_aksg_real") or "AKSG-12"
 
-SWEP.Class = "Shotgun"
+SWEP.Class = ARC9:GetPhrase("smorg_class_weapon_sho") or "Shotgun"
 SWEP.Trivia = {
-    ["Country of Origin"] = [[[Soviet] Russia]],
-    ["Caliber"] = "12 Gauge",
+    [ ARC9:GetPhrase("smorg_trivia_country") or "Country of Origin1" ] = ARC9:GetPhrase("smorg_trivia_country_soviet_union") or "Soviet Union",
+    [ ARC9:GetPhrase("smorg_trivia_caliber") or "Calibre2" ] = ARC9:GetPhrase("smorg_trivia_caliber_12g") or "12 Gauge",
 }
 
 SWEP.Credits = {
-    ["Assets2"] = [[Counter-Strike Source]],
-    ["Contact3"] = [[SlogoKolt#6648 or Mytton#5132]],
+    [ ARC9:GetPhrase("smorg_trivia_assets") or  ARC9:GetPhrase("smorg_trivia_assets") or "Assets3" ] = [[Counter-Strike Source]],
+    [ ARC9:GetPhrase("smorg_trivia_contact") or  ARC9:GetPhrase("smorg_trivia_contact") or "Contact4"  ] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
-SWEP.Description = [[First, Last and Undocumented interation of a failed line of alteration.
+SWEP.Description = ARC9:GetPhrase("smorg_gekolt_remix_aksg_desc") or [[First, Last and Undocumented interation of a failed line of alteration.
 Infamy breeds infamy.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/remix/c_aksg.mdl"
@@ -261,7 +261,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("smorg_category_optic") or "Optic",
         DefaultName = "None",
         InstalledElements = {"rail_top"},
 
@@ -271,7 +271,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Foregrip",
+        PrintName = ARC9:GetPhrase("smorg_category_foregrip") or "Foregrip",
         DefaultName = "None",
         InstalledElements = {"rail_bot"},
 
@@ -283,7 +283,7 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "MOUNT Right",
+        PrintName = ARC9:GetPhrase("smorg_category_mount_r") or "Mount R.",
         Category = {"mountl_css", "optic_css_free"},
         InstalledElements = {"rail_side"},
 
@@ -294,7 +294,7 @@ SWEP.Attachments = {
     },
 	
     {
-        PrintName = "Ammo Type",
+        PrintName = ARC9:GetPhrase("smorg_category_ammo") or "Ammo",
         DefaultName = "Default Type",
 		
         Category = {"css_ammo_sg"},

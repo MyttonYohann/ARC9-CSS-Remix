@@ -3,24 +3,24 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - Smorgasbord"
-SWEP.SubCategory = "Primaries"
+SWEP.Category = ARC9:GetPhrase("smorg_category") or "ARC9 - Smorgasbord"
+SWEP.SubCategory = ARC9:GetPhrase("smorg_category_slot_prim") or "Primaries"
 
-SWEP.PrintName = "Husellisch-11"
-SWEP.TrueName = "G11"
+SWEP.PrintName = ARC9:GetPhrase("smorg_gekolt_remix_g11") or "Husellisch-11"
+SWEP.TrueName = ARC9:GetPhrase("smorg_gekolt_remix_g11_real") or "G11"
 
-SWEP.Class = "Submachine Gun"
+SWEP.Class = ARC9:GetPhrase("smorg_class_weapon_smg") or "Submachine Gun"
 SWEP.Trivia = {
-    ["Country of Origin"] = "Switzerland",
-    ["Caliber"] = "4.73×33mm Caseless",
+    [ ARC9:GetPhrase("smorg_trivia_country") or "Country of Origin1" ] = ARC9:GetPhrase("smorg_trivia_country_switzerland") or "Switzerland"
+    [ ARC9:GetPhrase("smorg_trivia_caliber") or "Calibre2" ] = ARC9:GetPhrase("smorg_trivia_caliber_473x33") or "4.73×33mm Caseless",
 }
 
 SWEP.Credits = {
-    ["Assets3"] = [[Counter-Strike Source]],
-    ["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
+    [ ARC9:GetPhrase("smorg_trivia_assets") or  ARC9:GetPhrase("smorg_trivia_assets") or "Assets3" ] = [[Counter-Strike Source]],
+    [ ARC9:GetPhrase("smorg_trivia_contact") or  ARC9:GetPhrase("smorg_trivia_contact") or "Contact4"  ] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
-SWEP.Description = [[Impractical from the start, a design too ambition for its time.]]
+SWEP.Description = ARC9:GetPhrase("smorg_gekolt_remix_g11_desc") or [[Impractical from the start, a design too ambition for its time.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/remix/c_g11.mdl"
 SWEP.WorldModel = "models/weapons/geckololt_css/remix/c_g11.mdl"
@@ -327,7 +327,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {	--1
-        PrintName = "Foregrip",
+        PrintName = ARC9:GetPhrase("smorg_category_foregrip") or "Foregrip",
         DefaultName = "None",
         InstalledElements = {"fg"},
         DefaultIcon = Material("arc9/def_att_icons/grip.png"),
@@ -338,7 +338,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {	--2
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("smorg_category_optic") or "Optic",
         DefaultName = "None",
         InstalledElements = {"optic_main"},
 
@@ -350,7 +350,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {	--3
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("smorg_category_muzzle") or "Muzzle",
         DefaultName = "None",
 
         DefaultIcon = Material("arc9/def_att_icons/barrel.png"),
@@ -363,7 +363,7 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "MOUNT Right",
+        PrintName = ARC9:GetPhrase("smorg_category_mount_r") or "Mount R.",
         Category = {"mountl_css"},
         InstalledElements = {"rail_side"},
 

@@ -3,24 +3,24 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - Smorgasbord"
-SWEP.SubCategory = "Secondaries"
+SWEP.Category = ARC9:GetPhrase("smorg_category") or "ARC9 - Smorgasbord"
+SWEP.SubCategory = ARC9:GetPhrase("smorg_category_slot_sec") or "Secondaries"
 
-SWEP.PrintName = "Ohlderogl Wricht"
-SWEP.TrueName = "Baby Deagle"
+SWEP.PrintName = ARC9:GetPhrase("smorg_gekolt_remix_minid") or "Ohlderogl Wricht"
+SWEP.TrueName = ARC9:GetPhrase("smorg_gekolt_remix_minid_real") or "Baby Deagle"
 
-SWEP.Class = "Pistol"
+SWEP.Class = ARC9:GetPhrase("smorg_class_weapon_pis") or "Pistol"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = ".50 Action Express",
+    [ ARC9:GetPhrase("smorg_trivia_country") or "Country of Origin1" ] = ARC9:GetPhrase("smorg_trivia_country_usa") or "United States",
+    [ ARC9:GetPhrase("smorg_trivia_caliber") or "Calibre2" ] = ARC9:GetPhrase("smorg_trivia_caliber_50ae") or ".50 Action Express",
 }
 
 SWEP.Credits = {
-    ["Assets3"] = [[Counter-Strike Source]],
-    ["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
+    [ ARC9:GetPhrase("smorg_trivia_assets") or  ARC9:GetPhrase("smorg_trivia_assets") or "Assets3" ] = [[Counter-Strike Source]],
+    [ ARC9:GetPhrase("smorg_trivia_contact") or  ARC9:GetPhrase("smorg_trivia_contact") or "Contact4"  ] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
-SWEP.Description = [[Compact version of a hunting pistol.]]
+SWEP.Description = ARC9:GetPhrase("smorg_gekolt_remix_minid_desc") or [[Compact version of a hunting pistol.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/remix/c_minid.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
@@ -249,7 +249,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("smorg_category_optic") or "Optic",
         DefaultName = "None",
         InstalledElements = {"has_optic"},
 
@@ -260,7 +260,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("smorg_category_muzzle") or "Muzzle",
         DefaultName = "None",
 
         ExcludeElements = {"pre_muzzed"},
