@@ -260,7 +260,7 @@ end
 SWEP.Attachments = {
     {
         -- PrintName = [[Optic | Tactical]],
-        PrintName = (ARC9:GetPhrase("smorg_category_optic") or "Optic") .. " / " (ARC9:GetPhrase("smorg_category_tactical") or "Tactical")
+        PrintName = (ARC9:GetPhrase("smorg_category_optic") or "Optic") .. " | " .. (ARC9:GetPhrase("smorg_category_tactical") or "Tactical"),
         DefaultName = "None",
         InstalledElements = {"rail_tac"},
 
