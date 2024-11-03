@@ -204,12 +204,14 @@ SWEP.CrouchPos = Vector(-0.5, -0.5, -1)
 SWEP.CrouchAng = Angle(0, 0, -10)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(10, 28, 8)
+SWEP.CustomizePos = Vector(8.5, 45, 5)
 
-SWEP.CustomizeSnapshotFOV = 110
+SWEP.CustomizeSnapshotPos = Vector(0, 40, 0)
+SWEP.CustomizeSnapshotFOV = 65
+
 SWEP.CustomizeNoRotate = false
 
-SWEP.CustomizeRotateAnchor = Vector(15, -2, -5.23)
+SWEP.CustomizeRotateAnchor = Vector(8.5, -3, -5.23)
 
 SWEP.StandardPresets = {
 }
@@ -316,7 +318,8 @@ SWEP.Animations = {
             {s =  "gekolt_css/galil_clipin.wav" ,    t = 45 / 40},
         },
         FireASAP = true,
-        MinProgress = 0.8,
+        MinProgress = 0.95,
+		RefillProgress = 0.7,
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
@@ -332,7 +335,8 @@ SWEP.Animations = {
             {s =  "gekolt_css/xm_boltpull2.ogg" ,    t = 73 / 40},
         },
         FireASAP = true,
-        MinProgress = 0.8,
+        MinProgress = 0.95,
+		RefillProgress = 0.775,
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 1, rhik = 1, },{ t = 0.2, lhik = 0, rhik = 1, },{ t = 0.6, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 1, rhik = 1, },

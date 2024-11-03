@@ -92,6 +92,9 @@ ATT.Hook_TranslateAnimation = function(wep, anim) -- mang fuck that shit
     return anim .. "_pirate"
 end
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-7, -12.5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-7, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "gekolt_fof_coach_b1")
 
 
@@ -139,6 +142,9 @@ ATT.ModelBodygroups = "15000"
 ATT.Hook_TranslateAnimation = function(wep, anim) -- mang fuck that shit
     if anim == "fire" then  return "fire_edge" end
 end
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 0, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "gekolt_ca_uzi_1")
 

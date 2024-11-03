@@ -44,6 +44,8 @@ SWEP.ChamberSize = 0
 SWEP.SupplyLimit = 3
 SWEP.Crosshair = false
 
+SWEP.CustomSelectIcon = Material("smorgasbordremix/arc9_gekolt_remix_bowhl2.png")
+
 -------------------------- ENTITY LAUNCHING
 SWEP.Ammo = "xbowbolt"
 
@@ -108,10 +110,14 @@ SWEP.ViewModelFOVBase = 90
 SWEP.ActivePos = Vector(0, -0.5, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CustomizeAng = Angle(90, 20, 0)
-SWEP.CustomizePos = Vector(10, 32, 4)
-SWEP.CustomizeSnapshotFOV = 110
-SWEP.CustomizeNoRotate = false
+SWEP.CustomizeAng = Angle(90, 20, 90)
+SWEP.CustomizePos = Vector(2.5, 50, -9)
+
+SWEP.CustomizeSnapshotPos = Vector(4, 60, 6)
+SWEP.CustomizeSnapshotAng = Angle(0, 0, -45)
+SWEP.CustomizeSnapshotFOV = 65
+
+SWEP.CustomizeNoRotate = true
 
 SWEP.CrouchPos = Vector(0, -0.5, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
@@ -145,8 +151,8 @@ SWEP.IronSights = {
     CrosshairInSights = false
 }
 SWEP.HasSights = true
-SWEP.PeekPos = Vector(4, 3, 0)
-SWEP.PeekAng = Angle(0, 0, 50)
+SWEP.PeekPos = Vector(2, 3, 0)
+SWEP.PeekAng = Angle(0, 0, 10)
 
 SWEP.TriggerDelay = true -- Add a delay before the weapon fires.
 SWEP.TriggerDelayTime = 0.2 -- Time until weapon fires.

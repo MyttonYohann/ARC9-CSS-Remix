@@ -210,11 +210,14 @@ SWEP.CrouchPos = Vector(-0.5, -0.5, -1)
 SWEP.CrouchAng = Angle(0, 0, -10)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(10, 28, 5)
-SWEP.CustomizeSnapshotFOV = 110
+SWEP.CustomizePos = Vector(9, 40, 5)
+
+SWEP.CustomizeSnapshotPos = Vector(0, 40, 0)
+SWEP.CustomizeSnapshotFOV = 65
+
 SWEP.CustomizeNoRotate = false
 
-SWEP.CustomizeRotateAnchor = Vector(10.5, -3.05, -4)
+SWEP.CustomizeRotateAnchor = Vector(9, -2.75, -4)
 
 SWEP.StandardPresets = {
 }
@@ -281,6 +284,7 @@ SWEP.Animations = {
         },
         FireASAP = true,
         MinProgress = 0.95,
+		RefillProgress = 0.725,
     },
     ["reload_empty"] = {
         Source = {"dry"},
@@ -295,7 +299,8 @@ SWEP.Animations = {
             {s =  "gekolt_css/sg552_boltpull.wav" ,    t = 88 / 40},
         },
         FireASAP = true,
-        MinProgress = 0.9,
+        MinProgress = 0.95,
+		RefillProgress = 0.825,
     },
     ["draw"] = {
         Source = "draw",

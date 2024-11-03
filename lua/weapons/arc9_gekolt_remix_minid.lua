@@ -197,12 +197,14 @@ SWEP.CrouchPos = Vector(-0.5, -0.5, -1.5)
 SWEP.CrouchAng = Angle(0, 0, -7)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(13, 20, 3)
+SWEP.CustomizePos = Vector(12.5, 30, 3)
 
-SWEP.CustomizeSnapshotFOV = 110
+SWEP.CustomizeSnapshotPos = Vector(0, 0, 0)
+SWEP.CustomizeSnapshotFOV = 65
+
 SWEP.CustomizeNoRotate = false
 
-SWEP.CustomizeRotateAnchor = Vector(12, -3.25, -5.23)
+SWEP.CustomizeRotateAnchor = Vector(12.5, -3.25, -5.23)
 
 SWEP.StandardPresets = {
 }
@@ -317,7 +319,8 @@ SWEP.Animations = {
         Source = "wet",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         FireASAP = true,
-        MinProgress = 0.85,
+        MinProgress = 0.975,
+		RefillProgress = 0.725,
         EventTable = {
             {s =  "gekolt_css/de_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/de_clipin2.wav" ,    t = 25 / 40},
@@ -331,7 +334,8 @@ SWEP.Animations = {
         Source = "dry",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         FireASAP = true,
-        MinProgress = 0.85,
+        MinProgress = 0.95,
+		RefillProgress = 0.75,
         EventTable = {
             {s =  "gekolt_css/de_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/de_clipin2.wav" ,    t = 23 / 40},

@@ -198,11 +198,14 @@ SWEP.CrouchPos = Vector(-0.2, -0.5, -1)
 SWEP.CrouchAng = Angle(0, 0, -7)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(7, 28, 6)
-SWEP.CustomizeSnapshotFOV = 110
+SWEP.CustomizePos = Vector(7, 42.5, 4)
+
+SWEP.CustomizeSnapshotPos = Vector(0, 40, 0)
+SWEP.CustomizeSnapshotFOV = 65
+
 SWEP.CustomizeNoRotate = false
 
-SWEP.CustomizeRotateAnchor = Vector(10.5, -2.55, -2.23)
+SWEP.CustomizeRotateAnchor = Vector(7, -2.25, -2.23)
 
 SWEP.StandardPresets = {
 }
@@ -250,7 +253,8 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "wet",
         FireASAP = true,
-        MinProgress = 0.83,
+        MinProgress = 0.95,
+		RefillProgress = 0.7,
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
@@ -263,7 +267,8 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "dry",
         FireASAP = true,
-        MinProgress = 0.9,
+        MinProgress = 0.95,
+		RefillProgress = 0.85,
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },

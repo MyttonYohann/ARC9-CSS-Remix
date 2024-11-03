@@ -207,11 +207,14 @@ SWEP.CrouchPos = Vector(-0.5, -0.5, -1.5)
 SWEP.CrouchAng = Angle(0, 0, -10)
 
 SWEP.CustomizeAng = Angle(90, 5, 0)
-SWEP.CustomizePos = Vector(12, 28, 5)
-SWEP.CustomizeSnapshotFOV = 110
+SWEP.CustomizePos = Vector(16, 40, 4)
+
+SWEP.CustomizeSnapshotPos = Vector(0, 40, 0)
+SWEP.CustomizeSnapshotFOV = 65
+
 SWEP.CustomizeNoRotate = false
 
-SWEP.CustomizeRotateAnchor = Vector(10.5, -3.05, -4)
+SWEP.CustomizeRotateAnchor = Vector(16, -4, -4)
 
 SWEP.StandardPresets = {
 }
@@ -260,7 +263,8 @@ SWEP.Animations = {
     ["reload"] = {
         Source = {"wet"},
         FireASAP = true,
-        MinProgress = 0.83,
+        MinProgress = 0.95,
+		RefillProgress = 0.775,
         EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 18 / 40},
             {s =  "gekolt_css/awp_clipin.wav" ,    t = 62 / 40},
@@ -269,7 +273,8 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = {"dry"},
         FireASAP = true,
-        MinProgress = 0.9,
+        MinProgress = 0.95,
+		RefillProgress = 0.8,
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },

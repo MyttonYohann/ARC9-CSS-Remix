@@ -42,6 +42,9 @@ SWEP.TPIKforcelefthand = true
 
 SWEP.DefaultBodygroups = "00"
 
+SWEP.CustomSelectIcon = Material("smorgasbordremix/arc9_gekolt_remix_shieldtonfa.png")
+SWEP.NoDynamicKillIcon = true
+
 -------------------------- MAGAZINE
 
 SWEP.Ammo = "" -- What ammo type this gun uses.
@@ -118,14 +121,16 @@ SWEP.ViewModelFOVBase = 90
 SWEP.ActivePos = Vector(0, -1, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CustomizeAng = Angle(135, 0, 0)
-SWEP.CustomizePos = Vector(12.5, 46, 4)
+SWEP.CustomizeAng = Angle(0, 0, 0)
+SWEP.CustomizePos = Vector(0, 10, 3)
 SWEP.CustomizeSnapshotFOV = 110
 
 SWEP.CrouchPos = Vector(0, -0.5, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
-SWEP.CustomizeRotateAnchor = Vector(15, -2, 0)
+SWEP.CustomizeNoRotate = false
+
+SWEP.CustomizeRotateAnchor = Vector(15, 5, 0)
 
 SWEP.PeekPos = Vector(0, -3, -8)
 SWEP.PeekAng = Angle(0, 10, 0)

@@ -204,12 +204,14 @@ SWEP.CrouchPos = Vector(-0.5, 1, -1)
 SWEP.CrouchAng = Angle(0, 0, -10)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(12, 28, 5)
+SWEP.CustomizePos = Vector(17, 50, 5)
 
-SWEP.CustomizeSnapshotFOV = 110
+SWEP.CustomizeSnapshotPos = Vector(0, 40, 0)
+SWEP.CustomizeSnapshotFOV = 65
+
 SWEP.CustomizeNoRotate = false
 
-SWEP.CustomizeRotateAnchor = Vector(15, -2, -5.23)
+SWEP.CustomizeRotateAnchor = Vector(17, -2.75, -5.23)
 
 SWEP.StandardPresets = {
 }
@@ -333,7 +335,8 @@ SWEP.Animations = {
             {s =  "gekolt_fof/coach_close.wav" ,    t = 53 / 40},
         },
         FireASAP = true,
-        MinProgress = 0.8,
+        MinProgress = 0.95,
+		RefillProgress = 0.75,
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },
         },
@@ -352,7 +355,8 @@ SWEP.Animations = {
             {s =  "gekolt_fof/coach_close.wav" ,    t = 53 / 40},
         },
         FireASAP = true,
-        MinProgress = 0.8,
+        MinProgress = 0.95,
+		RefillProgress = 0.75,
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },
         },
@@ -362,7 +366,8 @@ SWEP.Animations = {
         Source = "dry_pirate",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         FireASAP = true,
-        MinProgress = 0.83,
+        MinProgress = 0.95,
+		RefillProgress = 0.8,
 		--EjectAt = 35 / 40,
         EventTable = {
             {s =  "gekolt_fof/coach_open.wav" ,   t = 3 / 40},
