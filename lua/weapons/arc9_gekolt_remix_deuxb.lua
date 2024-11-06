@@ -89,6 +89,15 @@ SWEP.RPMEmpty = 600
 SWEP.Firemodes = {
     {
         Mode = 1,
+    },
+    {
+        Mode = 1,
+		RecoilMult = 1.65,
+		SpreadMult = 1.33,
+		NumMult = 2,
+		AmmoPerShot = 2,
+		RPMEmpty = 175,
+		PrintName = ARC9:GetPhrase("smorg_firemode_both") or "BOTH",
     }
 }
 -------------------------- RECOIL
