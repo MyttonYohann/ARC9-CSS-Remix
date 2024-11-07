@@ -92,6 +92,12 @@ SWEP.BashRange = 72
 SWEP.PreBashTime = 0.2
 SWEP.PostBashTime = 0.275
 
+SWEP.Bash2Damage = 90
+SWEP.Bash2LungeRange = 0
+SWEP.Bash2Range = 72
+SWEP.PreBash2Time = 0.2
+SWEP.PostBash2Time = 0.275
+
 SWEP.ShootWhileSprint = true
 SWEP.BashWhileSprint = true
 
@@ -166,6 +172,12 @@ SWEP.Animations = {
         Source = "block",
     },
     ["bash"] = {
+        Source = {"slash1", "slash2"},
+        Time = 0.9,
+        FireASAP = true,
+        MinProgress = 0.85,
+    },
+    ["bash2"] = {
         Source = {"slash1", "slash2"},
         Time = 0.9,
         FireASAP = true,
