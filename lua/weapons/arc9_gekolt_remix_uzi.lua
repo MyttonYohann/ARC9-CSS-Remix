@@ -241,7 +241,7 @@ SWEP.ShootSound = "gekolt_ca/fire_uzi.wav"
 SWEP.ShootSoundSilenced = "gekolt_css/tmp-1.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "arc9/firemode.ogg"
 
 SWEP.DefaultBodygroups = "00022000"
 

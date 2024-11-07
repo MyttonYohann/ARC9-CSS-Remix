@@ -249,7 +249,7 @@ SWEP.ShootSound = "oneshotof_cs16/aug-1.wav"
 SWEP.ShootSoundSilenced = "oneshotof_cs16/m4a1-1.wav"
 SWEP.DryFireSound = "oneshotof_cs16/dryfire_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "arc9/firemode.ogg"
 
 SWEP.DefaultBodygroups = "00000000000000000000"
 
@@ -325,7 +325,7 @@ SWEP.Attachments = {
         Category = {"grip_css"},
         MergeSlots = {4},
         Bone = "W_Main",
-        Pos = Vector(0, 3.25, 9),
+        Pos = Vector(-0.05, 3.25, 9),
         Ang = Angle(90, 0, -90),
     },
     {	--2
@@ -337,7 +337,7 @@ SWEP.Attachments = {
         ExcludeElements = {"fg_saw", "alt_optic"},
         Category = {"optic_css",},
         Bone = "W_Main",
-        Pos = Vector(0, -2.25, 3),
+        Pos = Vector(-0.05, -2.25, 3),
         Ang = Angle(90, 0, -90),
     },
     {	--3
@@ -348,7 +348,7 @@ SWEP.Attachments = {
         ExcludeElements = {"pre_muzzed"},
         Category = {"muzzle_css"},
         Bone = "W_Main",
-        Pos = Vector(0, 0.8, 17),
+        Pos = Vector(-0.05, 0.8, 17),
         Ang = Angle(90, 0, -90),
         Scale = 1
     },
@@ -360,7 +360,7 @@ SWEP.Attachments = {
         ExcludeElements = {"nogrip", "u_disk", "u_919x", "u_566"},
         Category = {"css_ubgl"},
         Bone = "W_Main",
-        Pos = Vector(0, 3, 8),
+        Pos = Vector(-0.05, 3, 8),
         Ang = Angle(90, 0, -90),
     },
 }

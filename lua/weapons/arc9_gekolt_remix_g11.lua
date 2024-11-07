@@ -260,7 +260,7 @@ SWEP.DistantShootSound = "cturix_ar15/fire_dist.wav"
 SWEP.ShootSoundSilenced = "gekolt_css/tmp-1.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "arc9/firemode.ogg"
 
 SWEP.DefaultBodygroups = "00200000000000000000"
 

@@ -249,7 +249,7 @@ SWEP.ShootSound = "oneshotof_cs16/g3sg1-1.wav"
 SWEP.ShootSoundSilenced = "oneshotof_cs16/m4a1-1.wav"
 SWEP.DryFireSound = "oneshotof_cs16/dryfire_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "arc9/firemode.ogg"
 
 SWEP.DefaultBodygroups = "00000000000000000000"
 
