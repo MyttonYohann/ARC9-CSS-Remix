@@ -7,7 +7,6 @@ ENT.Spawnable = false
 ENT.AdminSpawnable = false
 
 ENT.Model = "models/crossbow_bolt.mdl"
-ENT.Collectable = false
 
 AddCSLuaFile()
 
@@ -46,7 +45,6 @@ function ENT:PhysicsCollide(data, physobj)
             self:SetPos( data.HitPos - (data.HitNormal * 2) )
             self:EmitSound( "physics/metal/metal_computer_impact_bullet1.wav" )
             self.dt = CurTime() + 15
-            self.Collectable = true
 
             self:SetTrigger(true)
             self:UseTriggerBounds(true, 24)
@@ -65,19 +63,17 @@ function ENT:PhysicsCollide(data, physobj)
     end
 end
 
-function ENT:Use(ply)
-    if !ply:IsPlayer() then return end
-
-    ply:GiveAmmo(1, "xbowbolt", false)
-    self:Remove()
+function ENT:Use(plyUse)
+	self:Remove()
+    plyUse:GiveAmmo(1, "xbowbolt", false)
 end
 
-function ENT:StartTouch(ply)
+--[[function ENT:StartTouch(ply)
     if !ply:IsPlayer() then return end
 	
 	ply:GiveAmmo(1, "xbowbolt")
 	self:Remove()
-end
+end]]
 
 function ENT:Think()
     if SERVER then
