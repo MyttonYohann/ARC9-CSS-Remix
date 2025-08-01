@@ -41,7 +41,7 @@ SWEP.DefaultBodygroups = "001"
 SWEP.BottomlessClip = true
 SWEP.ClipSize = 1
 SWEP.ChamberSize = 0
-SWEP.SupplyLimit = 3
+SWEP.SupplyLimit = 12
 SWEP.Crosshair = false
 
 SWEP.CustomSelectIcon = Material("smorgasbordremix/arc9_gekolt_remix_bowhl2.png")
@@ -55,7 +55,7 @@ SWEP.MuzzleVelocity = 2000
 SWEP.ShootEntityData = {}
 SWEP.PhysBulletMuzzleVelocity = 960 * 39.37
 
-SWEP.DamageType = DMG_BLAST + DMG_BULLET + DMG_AIRBOAT
+SWEP.DamageType = DMG_BULLET
 SWEP.DamageMax = 800 -- Damage done at point blank range
 SWEP.DamageMin = 300 -- Damage done at maximum range
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.

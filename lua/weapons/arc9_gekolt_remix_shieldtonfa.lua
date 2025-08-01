@@ -232,12 +232,12 @@ SWEP.AttachmentElements = {
 }
 
 SWEP.Hook_Think = function(wep)
-    if !IsFirstTimePredicted() then return end
-
-	wep:KillShield()
+	if !IsFirstTimePredicted() then return end
 
 	if wep:GetOwner():KeyDown(IN_ATTACK2) and !wep:GetOwner():KeyDown(IN_ATTACK)	then
 		wep:CreateShield()	
+	else
+		wep:KillShield()
 	end
 
 end

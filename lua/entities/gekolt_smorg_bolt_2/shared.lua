@@ -14,7 +14,7 @@ function ENT:Initialize()
 		local pb_vert = 1
 		local pb_hor = 1
     if SERVER then
-		self:SetModel(self.Model)
+		self:SetModel(self.Model)	
 		self:SetAngles(self.Owner:EyeAngles())
 		self:PhysicsInitBox( Vector(-pb_vert,-pb_hor,-pb_hor), Vector(pb_vert,pb_hor,pb_hor) )
         self:SetMoveType( MOVETYPE_VPHYSICS )
@@ -42,7 +42,7 @@ function ENT:PhysicsCollide(data, physobj)
         if data.HitEntity:GetClass() == "worldspawn" then
             self:SetMoveType( MOVETYPE_NONE )
 			self:SetAngles(self.Owner:EyeAngles())
-            self:SetPos( data.HitPos - (data.HitNormal * 2) )
+            self:SetPos( data.HitPos - (data.HitNormal * 2) + Vector (0,15,0))
             self:EmitSound( "physics/metal/metal_computer_impact_bullet1.wav" )
             self.dt = CurTime() + 15
 
